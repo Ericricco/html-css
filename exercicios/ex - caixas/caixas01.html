@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{ /* box-level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 30px;
+            border-style: solid;
+            /*
+            solid, groove (meio que em 3D), dashed (pontilhado), dotted, double (linha dupla).
+            */
+            border-color: darkslategray;
+            
+            /*
+            Shorthand:
+            border: 30px solid darkslategray;
+            */ 
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+            Shorthand:
+            padding: 10px 10px 10px 10px;
+
+            ou posso utilizar só um 10px, já que é a mesma medida para todos.
+
+            Se utilizar dois números, como: "border: 10px 20px", ele vai aplicar 10px para cima e embaixo e 20px para os lados.
+            */
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+
+            /*
+            Shorthand:
+            margin: 20px 20px 20px 20px;
+            
+            Mesmas considerações da propriedade "padding"
+
+            Se quiser centralizar com a shorthand, basta com que digite "auto" nas medidas dos lados. Ex: 
+            margin: 20px auto 20px auto;
+            */
+
+            outline-width: 14px;
+            outline-style: groove;
+            outline-color: #068106bd;
+
+            /*
+            Shorthand:
+            outline: 14px groove #068106bd;
+            */
+        }
+
+        a { /* inline-level */
+            border-width: 5px;
+            border-style: dashed;
+            border-color: red;
+        }
+    </style>
+    <title>Caixas</title>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+    <!-- User agent é o seu navegador que está exibindo o conteúdo.
+    "Display= block;" significa que vai ser um elemento do tipo box-level. -->
+</body>
+</html>

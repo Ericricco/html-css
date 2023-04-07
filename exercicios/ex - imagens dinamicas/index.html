@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex - imagens dinamicas/Designbolts-Free-Multimedia-IPhone.ico" type="image/x-icon">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam sozinhas</h1>
+    <p>Neste exercício, iremos praticar a utilização de <strong>imagens de diferentes tamanhos</strong> com o <em>objetivo</em> de <em>testar</em> sua <em>adaptabilidade</em> em outras <mark style="background-color:aqua;">telas de dispositivos</mark>.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/Pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Media.png" type="image/png">
+        <img src="imagens/Grande.png" alt="imagem flexivel">
+        <!--A interpretação é: se o navegador chegar a menos de 1000px, o site vai carregar a foto média-->
+    </picture>
+<hr>
+    <h1>Áudios no HTML</h1>
+    <p>Vamos nessa parte aprender a como <strong>usar áudios</strong> dentro dos nossos <mark style="background-color: royalblue;">documentos HTML</mark></p>
+    <audio preload="metadata" controls> 
+        <source src="midia/happy-mistake.mp3" type="audio/mp3">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+    </audio>
+    <p>Não funcionou? Clique <a href="midia/happy-mistake.mp3" download="Audio.mp3" type="audio/mpeg">aqui</a></p>
+</body>
+</html>

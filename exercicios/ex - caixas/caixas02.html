@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.966);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(110, 8, 110, 0.829);
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.637);
+            padding: 10px;
+        }
+
+        header > h1 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(190, 13, 182, 0.568);
+            padding: 5px;
+            margin: 5px;
+            box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.301);
+        }
+
+        nav > a {
+            text-decoration: none;            
+            color: rgba(214, 226, 43, 0.808);
+            font-weight: bold;  
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.637);
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            margin: 10px;
+            border: 7px groove rgba(190, 13, 182, 0.568);
+        }
+
+        section {
+            text-align: justify;
+        }
+
+        section > h2 {
+            text-decoration: underline;
+        }
+
+        article > h2 {
+            text-decoration: underline;
+        }
+
+        aside {
+            text-align: right;
+        }
+
+        footer {
+            background-color: aliceblue;
+            text-align: center;
+            padding: 5px;
+            font-size: small;
+            margin: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Seria o nosso "cabeçalho" -->
+        <h1>Meu site</h1>
+        <nav> <!-- Onde você coloca os links de navegação pelo site -->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Onde fica nosso conteúdo principal -->
+        <section id="assuntos">
+            <h2>Casagrande demitido da Globolixo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci libero, officiis fugit cumque architecto cupiditate ducimus sint, cum itaque nobis suscipit, odit accusamus veritatis reprehenderit officia deleniti reiciendis impedit dolorem.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt officia temporibus alias deserunt amet perspiciatis commodi mollitia quas a est nisi sed voluptates, delectus tenetur totam eius omnis. Quae!</p>
+            </article>
+            <article>
+                <aside> <!-- Conteúdo periférico, mas relacionado ao artigo -->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Nosso rodapé -->
+        Desenvolvido pelo mim.
+    </footer>
+</body>
+</html>

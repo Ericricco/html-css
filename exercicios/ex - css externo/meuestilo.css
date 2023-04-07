@@ -1,0 +1,21 @@
+@charset "UTF-8"
+
+body {
+    background-color: yellow; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+h1 {
+    background-color: red;
+    color: orangered;
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: orangered;
+}
+
+p {
+    text-align: justify;
+}

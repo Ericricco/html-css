@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(26, 24, 24);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+p {
+    color: aliceblue;
+    text-align: center;
+}
+div {
+   text-align: center; 
+}
