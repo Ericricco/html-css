@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        iframe {
+            width: 95vw;
+            height: 30em;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse non architecto provident nobis rerum ipsa labore voluptatem id ex alias. Obcaecati in blanditiis harum dignissimos nobis repellat dicta quasi minima!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi debitis corporis asperiores magni atque nostrum ab explicabo temporibus, sunt consectetur rem nam dolor omnis aliquam mollitia exercitationem. Laudantium, iusto voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, harum animi necessitatibus, saepe facilis et tenetur repellendus modi ut similique vel accusamus quibusdam delectus dolorem impedit ullam autem corporis aut.</p>
+
+    <iframe srcdoc="<h1>Escolha uma das opções acima para navegar no iframe</h1><p>blablablablabalblablablablablablablablablablablablablabalbablablabalbalbal</p>" name="frame" frameborder="0">
+        <p>Infelizmente o seu navegador não é compatível.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi debitis corporis asperiores magni atque nostrum ab explicabo temporibus, sunt consectetur rem nam dolor omnis aliquam mollitia exercitationem. Laudantium, iusto voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, harum animi necessitatibus, saepe facilis et tenetur repellendus modi ut similique vel accusamus quibusdam delectus dolorem impedit ullam autem corporis aut</p>
+</body>
+</html>
