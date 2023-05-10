@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 4</title>
+</head>
+<body>
+    <h1>Exempplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" autocomplete="name" >
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" required pattern="(\d\{2}\)\d{5}-\d{4}" placeholder="(xx)xxxxx-xxxx" autocomplete="tel">
+            </p>
+            <!-- Pattern = parâmetro para se colocar uma expressão regular (RegEx);
+                 Toda expresão regular começa com um acento circunflexo e termina commum cifrão;
+                 Ex.: ^[0-9]{4}-[0-9]{4}$ ou ^\d{4}-\d{4}$
+            
+                 * [0-9] ou \d = dígito, na expressão regular;
+                 * [0-9]{4} = Tem que ser quatro dígitos;
+                 * {4,5} = De quatro a cinco dígitos;
+                 * (\ = abrir parênteses;  \) = fechar parênteses;
+            
+            ;             DICA: estude sobre RegEx; -->
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>     
+    </form>
+</body>
+</html>
