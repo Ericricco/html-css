@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="POST" autocomplete="off">
         <p><label for="inome">Nome:</label>
              <input type="text" name="nome" id="inome"></p>
              <!-- "Name" é mais útil para HTML e PHP e "id" é útil para JavaScript e o uso do <label> -->
@@ -18,5 +18,14 @@
             <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="button" value="Enviar"></p>
     </form>
+    
+    <!-- Sobre o método GET e POST:
+    No método GET as informações inseridas no formulário estarão aparantes na URL, já no POST ficarão um pouco mais "protegidas" (coloquei aspas porque tem como acessar as informações, porém deve vasculhar um pouco mais).
+
+    Quando usar o GET ou o POST?
+    Informações sensíveis? Então, use o POST.
+    Informações não-sensíveis? Use o GET.
+
+    Lembrando que se você quiser mais segurança de fato, precisa-se aprender sobre como usar o protocolo HTTPS.-->
 </body>
 </html>
