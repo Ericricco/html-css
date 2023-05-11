@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+</head>
+<body>
+    <h1>Testes de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="n1" id="in1" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" required min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+                <!-- isoma = output;  innerHTML = O HTML que está dentro (no caso de <output>); 
+                     Number(un1.value) = O valor que está dentro de "in1";
+                     Number(in2.value) = O valor que está dentro de "in2"; -->
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Com "range"</legend>
+            <p>
+                <label for="inum">Número: </label>
+                <input type="range" name="num" id="inum" min="0" max="10" oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">5</output>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
