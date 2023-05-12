@@ -27,7 +27,7 @@ menu ul {
 
 menu li {
     display: inline-block;
-    /* Ajuda a colocar os links na área do menu de navegação os links um do lado do outro. */
+    /* Ajuda a colocar os links na área do menu de navegação um do lado do outro. */
 
     background-color: rgb(75, 75, 75);
     color: white;
